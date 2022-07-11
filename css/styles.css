@@ -1,0 +1,197 @@
+:root {
+	--acsent-color: #2196f3;
+	--primery-font: "Roboto", sans-serif;
+	--secondary-font: "Raleway", sans-serif;
+	--primery-text-color-them-dark: #ffffff;
+	--secondary-text-color-them-dark: rgba(255, 255, 255, 0.6);
+	--primery-text-color-them-light: #212121;
+	--secondary-text-color-them-light: #757575;
+	--primery-font-size: 16px;
+	--secondary-font-size: 14px;
+}
+.list {
+	list-style: none;
+}
+.link {
+	text-decoration: none;
+}
+body {
+	font-family: var(--primery-font);
+}
+/* ==========COMPONENTS================= */
+.title-second {
+	font-weight: 700;
+	font-size: 36px;
+	line-height: 1, 17;
+	text-align: center;
+	letter-spacing: 0.03em;
+	color: var(--primery-text-color-them-light);
+}
+.logo {
+	font-family: var(--secondary-font);
+	font-weight: 700;
+	font-size: 26px;
+	line-height: 1, 19;
+	letter-spacing: 0.03em;
+	color: var(--acsent-color);
+}
+.studio {
+	font-family: var(--secondary-font);
+}
+.studio-dark {
+	color: var(--primery-text-color-them-light);
+}
+
+.studio-light {
+	color: var(--primery-text-color-them-dark);
+}
+/* ==========/COMPONENTS=================== */
+/* =============HEADER===================== */
+.menu-link {
+	font-weight: 500;
+	font-size: var(--secondary-font);
+	line-height: 1, 14;
+	letter-spacing: 0.02em;
+	color: var(--primery-text-color-them-light);
+}
+.menu-link:hover,
+.menu-link:focus,
+.menu-link:active {
+	color: var(--acsent-color);
+}
+.contakt {
+	font-style: normal;
+	font-weight: 500;
+	font-size: var(--secondary-font-size);
+	line-height: 1, 14;
+	letter-spacing: 0.02em;
+	color: var(--secondary-text-color-them-light);
+}
+.contakt:hover,
+.contakt:focus {
+	color: var(--acsent-color);
+}
+/* =============/HEADER===================== */
+/* =============HERO======================== */
+.hero {
+	background-color: #2f303a;
+}
+.hero-title {
+	font-weight: 900;
+	font-size: 44px;
+	line-height: 1, 36;
+	text-align: center;
+	letter-spacing: 0.06em;
+	text-transform: uppercase;
+	color: var(--primery-text-color-them-dark);
+}
+.modal-btn {
+	background-color: var(--acsent-color);
+	font-weight: 700;
+	font-size: var(--primery-font-size);
+	line-height: 1, 88;
+	display: flex;
+	align-items: center;
+	text-align: center;
+	letter-spacing: 0.06em;
+	color: var(--primery-text-color-them-dark);
+	cursor: pointer;
+}
+.modal-btn:hover,
+.modal-btn:focus {
+	background-color: #188ce8;
+}
+/* =============/HERO===================== */
+/* ============= ABOUT=====================*/
+.about-list {
+	font-weight: 700;
+	font-size: var(--secondary-font-size);
+	line-height: 1, 14;
+	letter-spacing: 0.03em;
+	text-transform: uppercase;
+	color: var(--primery-text-color-them-light);
+}
+.description {
+	font-size: var(--secondary-font-size);
+	line-height: 1, 71;
+	letter-spacing: 0.03em;
+	color: var(--secondary-text-color-them-light);
+}
+/* ============/ABOUT=================== */
+/* ============STAFF==================== */
+.name-person {
+	font-weight: 500;
+	font-size: var(--primery-font-size);
+	line-height: 1, 19;
+	text-align: center;
+	letter-spacing: 0.03em;
+	color: var(--primery-text-color-them-light);
+}
+.position-person {
+	font-size: var(--primery-font-size);
+	line-height: 1, 19;
+	text-align: center;
+	letter-spacing: 0.03em;
+	color: var(--secondary-text-color-them-light);
+}
+/* ============/STAFF=================== */
+/*=============PORTFOLIO================*/
+.filter-button {
+	background-color: #f5f4fa;
+	font-weight: 500;
+	font-size: var(--primery-font-size);
+	line-height: 1, 63;
+	text-align: center;
+	letter-spacing: 0.03em;
+	color: var(--primery-text-color-them-light);
+}
+.filter-button:hover,
+.filter-button:focus {
+	background-color: var(--acsent-color);
+	color: var(--primery-text-color-them-dark);
+}
+.portfolio-title {
+	font-weight: 700;
+	font-size: 18px;
+	line-height: 2;
+	letter-spacing: 0.06em;
+	color: var(--primery-text-color-them-light);
+}
+.portfolio-type {
+	font-size: var(--primery-font-size);
+	line-height: 1, 89;
+	letter-spacing: 0.03em;
+	color: var(--secondary-text-color-them-light);
+}
+.portfolio-description {
+	font-size: 18px;
+	line-height: 1, 56;
+	letter-spacing: 0.03em;
+	color: var(--primery-text-color-them-dark);
+}
+/* ============FOOTER================== */
+.footer {
+	background-color: #2f303a;
+}
+.adress {
+	font-style: normal;
+	font-size: var(--secondary-font-size);
+	line-height: 1, 71;
+	letter-spacing: 0.03em;
+	color: var(--primery-text-color-them-dark);
+}
+.contact-footer {
+	font-style: normal;
+	font-size: var(--secondary-font-size);
+	line-height: 1, 71;
+	letter-spacing: 0.03em;
+	color: var(--secondary-text-color-them-dark);
+}
+/* согласно ТЗ-делаю ховер в футере.
+"«С5» Текст контактов в хедере и футере меняет цвет при ховере и фокусе." 
+Хотя на макете ховера нет */
+.contact-footer:hover,
+.contact-footer:focus {
+	color: var(--acsent-color);
+}
+/* ============/FOOTER================== */
