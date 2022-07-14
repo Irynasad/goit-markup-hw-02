@@ -1,13 +1,51 @@
 :root {
-	--acsent-color: #2196f3;
 	--primery-font: "Roboto", sans-serif;
 	--secondary-font: "Raleway", sans-serif;
-	--primery-text-color-them-dark: #ffffff;
-	--secondary-text-color-them-dark: rgba(255, 255, 255, 0.6);
-	--primery-text-color-them-light: #212121;
-	--secondary-text-color-them-light: #757575;
-	--primery-font-size: 16px;
-	--secondary-font-size: 14px;
+
+	--primery-font-size: 14px;
+	--secondary-font-size: 16px;
+	--primery-letter-spacing: 0.03em;
+
+	--color-one: #212121;
+	--color-two: #ffffff;
+	--color-three: #757575;
+	--color-four: #2196f3;
+	--color-five: #eeeeee;
+	--color-six: #000000;
+	--color-seven: #f5f4fa;
+	--coolor-eight: #ffffff 60 %;
+	--color-nine: #2f303a;
+	--color-ten: #ececec;
+	--color-eleven: #000000 20 %;
+	--color-twelwe: #188ce8;
+}
+h1 h2,
+h3,
+h4,
+h5,
+h6,
+p {
+	margin-top: 0;
+	margin-bottom: 0;
+}
+ul,
+ol {
+	margin-top: 0;
+	margin-bottom: 0;
+	padding-left: 0;
+}
+img {
+	display: block;
+}
+body {
+	background-color: var(--color-two);
+	color: var(--color-three);
+	font-family: var(--primery-font);
+	font-size: var(--primery-font-size);
+	letter-spacing: var(--primery-letter-spacing);
+}
+button {
+	font-family: inherit;
 }
 .list {
 	list-style: none;
@@ -15,183 +53,179 @@
 .link {
 	text-decoration: none;
 }
-body {
-	font-family: var(--primery-font);
-}
+
 /* ==========COMPONENTS================= */
 .title-second {
 	font-weight: 700;
 	font-size: 36px;
-	line-height: 1, 17;
+	line-height: 1 17;
 	text-align: center;
-	letter-spacing: 0.03em;
-	color: var(--primery-text-color-them-light);
+	color: var(--color-one);
 }
 .logo {
 	font-family: var(--secondary-font);
 	font-weight: 700;
 	font-size: 26px;
-	line-height: 1, 19;
-	letter-spacing: 0.03em;
-	color: var(--acsent-color);
+	line-height: 1 19;
+	color: var(--color-four);
 }
 .studio {
 	font-family: var(--secondary-font);
 }
 .studio-dark {
-	color: var(--primery-text-color-them-light);
+	color: var(--color-one);
 }
 
 .studio-light {
-	color: var(--primery-text-color-them-dark);
+	color: var(--color-two);
 }
+.visually-hidden {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	border: 0;
+	padding: 0;
+
+	white-space: nowrap;
+	clip-path: inset(100%);
+	clip: rect(0 0 0 0);
+	overflow: hidden;
+}
+
 /* ==========/COMPONENTS=================== */
 /* =============HEADER===================== */
+.top-header {
+	background-color: var(--color-ten);
+}
 .menu-link {
 	font-weight: 500;
-	font-size: var(--secondary-font);
-	line-height: 1, 14;
+	line-height: 1 14;
 	letter-spacing: 0.02em;
-	color: var(--primery-text-color-them-light);
+	color: var(--color-one);
 }
 .menu-link:hover,
 .menu-link:focus,
-.menu-link:active {
-	color: var(--acsent-color);
+.current {
+	color: var(--color-four);
 }
+
 .contakt {
 	font-style: normal;
 	font-weight: 500;
-	font-size: var(--secondary-font-size);
-	line-height: 1, 14;
+	font-size: var(--primery-font-size);
+	line-height: 1 14;
 	letter-spacing: 0.02em;
-	color: var(--secondary-text-color-them-light);
+	color: var(--color-three);
 }
 .contakt:hover,
 .contakt:focus {
-	color: var(--acsent-color);
+	color: var(--color-four);
 }
 /* =============/HEADER===================== */
 /* =============HERO======================== */
 .hero {
-	background-color: #2f303a;
+	background-color: var(--color-nine);
 }
 .hero-title {
 	font-weight: 900;
 	font-size: 44px;
-	line-height: 1, 36;
+	line-height: 1 36;
 	text-align: center;
 	letter-spacing: 0.06em;
 	text-transform: uppercase;
-	color: var(--primery-text-color-them-dark);
+	color: var(--color-two);
 }
 .modal-btn {
-	background-color: var(--acsent-color);
+	background-color: var(--color-four);
 	font-weight: 700;
-	font-size: var(--primery-font-size);
-	line-height: 1, 88;
+	font-size: var(--secondary-font-size);
+	line-height: 1 88;
 	display: flex;
 	align-items: center;
 	text-align: center;
 	letter-spacing: 0.06em;
-	color: var(--primery-text-color-them-dark);
+	color: var(--color-two);
 	cursor: pointer;
 }
 .modal-btn:hover,
 .modal-btn:focus {
-	background-color: #188ce8;
+	background-color: var(--color-twelwe);
 }
 /* =============/HERO===================== */
 /* ============= ABOUT=====================*/
 .about-list {
 	font-weight: 700;
-	font-size: var(--secondary-font-size);
-	line-height: 1, 14;
-	letter-spacing: 0.03em;
+	line-height: 1 14;
 	text-transform: uppercase;
-	color: var(--primery-text-color-them-light);
+	color: var(--color-one);
 }
 .description {
-	font-size: var(--secondary-font-size);
-	line-height: 1, 71;
-	letter-spacing: 0.03em;
-	color: var(--secondary-text-color-them-light);
+	line-height: 1 71;
 }
 /* ============/ABOUT=================== */
 /* ============STAFF==================== */
 .name-person {
 	font-weight: 500;
-	font-size: var(--primery-font-size);
-	line-height: 1, 19;
+	font-size: var(--secondary-font-size);
+	line-height: 1 19;
 	text-align: center;
-	letter-spacing: 0.03em;
-	color: var(--primery-text-color-them-light);
+	color: var(--color-one);
 }
 .position-person {
-	font-size: var(--primery-font-size);
-	line-height: 1, 19;
+	line-height: 1 19;
 	text-align: center;
-	letter-spacing: 0.03em;
-	color: var(--secondary-text-color-them-light);
 }
 /* ============/STAFF=================== */
 /*=============PORTFOLIO================*/
 .filter-button {
-	background-color: #f5f4fa;
+	background-color: var(--color-seven);
 	font-weight: 500;
-	font-size: var(--primery-font-size);
-	line-height: 1, 63;
+	font-size: var(--secondary-font-size);
+	line-height: 1 63;
+	letter-spacing: inherit;
 	text-align: center;
-	letter-spacing: 0.03em;
-	color: var(--primery-text-color-them-light);
+	color: var(--color-one);
 }
 .filter-button:hover,
 .filter-button:focus {
-	background-color: var(--acsent-color);
-	color: var(--primery-text-color-them-dark);
+	background-color: var(--color-four);
+	color: var(--color-one);
 }
 .portfolio-title {
 	font-weight: 700;
 	font-size: 18px;
 	line-height: 2;
 	letter-spacing: 0.06em;
-	color: var(--primery-text-color-them-light);
+	color: var(--color-one);
 }
 .portfolio-type {
-	font-size: var(--primery-font-size);
-	line-height: 1, 89;
+	font-size: var(--secondary-font-size);
+	line-height: 1 89;
 	letter-spacing: 0.03em;
-	color: var(--secondary-text-color-them-light);
-}
-.portfolio-description {
-	font-size: 18px;
-	line-height: 1, 56;
-	letter-spacing: 0.03em;
-	color: var(--primery-text-color-them-dark);
+	color: var(--color-three);
 }
 /* ============FOOTER================== */
 .footer {
-	background-color: #2f303a;
+	background-color: var(--color-nine);
 }
 .adress {
 	font-style: normal;
-	font-size: var(--secondary-font-size);
-	line-height: 1, 71;
+	font-size: var(--primery-font-size);
+	line-height: 1 71;
 	letter-spacing: 0.03em;
-	color: var(--primery-text-color-them-dark);
+	color: var(--color-two);
 }
 .contact-footer {
 	font-style: normal;
-	font-size: var(--secondary-font-size);
-	line-height: 1, 71;
-	letter-spacing: 0.03em;
-	color: var(--secondary-text-color-them-dark);
+	font-size: var(--primery-font-size);
+	line-height: 1 71;
+	color: var(--color-three);
 }
-/* согласно ТЗ-делаю ховер в футере.
-"«С5» Текст контактов в хедере и футере меняет цвет при ховере и фокусе." 
-Хотя на макете ховера нет */
 .contact-footer:hover,
-.contact-footer:focus {
-	color: var(--acsent-color);
+.contact-footer:focus,
+.adress:hover,
+.adress:focus {
+	color: var(--color-four);
 }
 /* ============/FOOTER================== */
